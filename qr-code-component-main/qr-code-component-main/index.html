@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .attribution {
+        font-size: 11px;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        gap: 16px;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Outfit", sans-serif;
+        background-color: hsl(212, 45%, 89%);
+      }
+
+      .card {
+        width: 360px;
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        border-radius: 10px;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .container {
+        padding: 20px 8px 24px;
+        text-align: center;
+      }
+
+      /*
+        ALL
+        TB  LR
+        T   LR  B
+        T   B   L   R
+      */
+
+      .container h4 {
+        font-size: 22px;
+        margin-bottom: 16px;
+        color: hsl(218, 44%, 22%);
+      }
+
+      .container p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+      }
+
+      /* Mobile Screen */
+      @media screen and (max-device-width: 375px) {
+        .card {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR-code" />
+      <div class="container">
+        <h4>Improve your front-end skills by building projects</h4>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Khizra Rizvi</a>.
+    </div>
+  </body>
+</html>
